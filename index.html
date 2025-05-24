@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tailwind css cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="index.js">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinod Bodke | Full Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="bg-red-500 ">
-        <h1>I am Vinod</h1>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-center px-4">
+    <h1 class="text-4xl sm:text-6xl font-bold mb-4">Vinod Bodke</h1>
+    <p class="text-xl sm:text-2xl">Full Stack Developer</p>
+    <p class="mt-4 text-sm sm:text-base max-w-xl">
+      Passionate developer skilled in building dynamic, scalable web apps with modern technologies.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="max-w-2xl mx-auto text-gray-600">
+      I’m a dedicated full stack developer with hands-on experience in building web applications using HTML, CSS, Tailwind CSS, JavaScript, PHP, MySQL, Laravel, and Filament. I also integrate payment gateways for secure transactions.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-8">Technologies I Use</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center max-w-4xl mx-auto">
+      <span class="bg-white p-4 rounded shadow">HTML</span>
+      <span class="bg-white p-4 rounded shadow">CSS</span>
+      <span class="bg-white p-4 rounded shadow">Tailwind CSS</span>
+      <span class="bg-white p-4 rounded shadow">JavaScript</span>
+      <span class="bg-white p-4 rounded shadow">PHP</span>
+      <span class="bg-white p-4 rounded shadow">MySQL</span>
+      <span class="bg-white p-4 rounded shadow">Laravel</span>
+      <span class="bg-white p-4 rounded shadow">Filament</span>
+      <span class="bg-white p-4 rounded shadow">Payment Gateways</span>
     </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-6 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-6">Get In Touch</h2>
+    <form class="max-w-md mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border p-3 rounded" required>
+      <input type="email" placeholder="Your Email" class="w-full border p-3 rounded" required>
+      <textarea placeholder="Your Message" class="w-full border p-3 rounded h-32" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-200 text-sm text-gray-600">
+    &copy; 2025 Vinod Bodke. All rights reserved.
+  </footer>
+
 </body>
 </html>
