@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vinod Bodke | Full Stack Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinod Bodke | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
@@ -12,37 +14,69 @@
     <header class="bg-white shadow fixed w-full top-0 z-30">
         <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center nav-link">
             <h1 class="text-xl font-bold text-blue-700">Vinod Bodke</h1>
-            <ul class="flex space-x-6 text-sm font-medium">
-            <li>
-                <a href="#hero" class="text-gray-700 hover:text-blue-600 flex gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 my-auto">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                    </svg>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li clas>
-                <a href="#about" class="text-gray-700 hover:text-blue-600 flex gap-1">
-                    <svg class="size-4 my-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <span>About</span>               
-                </a>
-            </li>
-            <li>
-                <a href="#skills" class="text-gray-700 hover:text-blue-600 flex gap-1">
-                    <svg class="size-4 my-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                    <span>Skills</span>
-                </a>
-            </li>
-            <li>
-                <a href="#contact" class="text-gray-700 hover:text-blue-600 flex gap-1">
-                    <svg class="size-4 my-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    <span>Contact</span>
-                </a>
-            </li>
+            <ul class="hidden md:flex space-x-6 text-sm font-medium">
+                <li>
+                    <a href="#hero" class="text-gray-700 hover:text-blue-600 flex gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 my-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li clas>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 flex gap-1">
+                        <svg class="size-4 my-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>About</span>               
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 flex gap-1">
+                        <svg class="size-4 my-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 flex gap-1">
+                        <svg class="size-4 my-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span>Contact</span>
+                    </a>
+                </li>
             </ul>
+            <div class="flex flex-row md:hidden">
+                <div class="my-auto ml-auto mx-2 md:mx-4">
+                    <div x-data="{ open: false }">
+                        <button x-on:click="open = !open" class="focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" class="fixed inset-y-0 left-0 w-[70%] bg-gray-50 border-l-2 border-gray-200 pt-16 px-4 z-50">
+                            <button x-on:click="open = false" class="absolute top-0 right-0 mt-4 mr-4 focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                            <ul class="my-4 flex flex-col gap-4">
+                                <li class="{{ request()->is('#home') ? 'underline decoration-primary underline-offset-8' : '' }}">
+                                    <a href="#hero" x-on:click="open = false">Home</a>
+                                </li>
+                                <li class="{{ request()->is('#about') ? 'underline decoration-primary underline-offset-8' : '' }}">
+                                    <a href="#about" x-on:click="open = false">About</a>
+                                </li>
+                                <li class="{{ request()->is('#skills') ? 'underline decoration-primary underline-offset-8' : '' }}">
+                                    <a href="#skills" x-on:click="open = false">Skills</a>
+                                </li>
+                                <li class="{{ request()->is('#contact') ? 'underline decoration-primary underline-offset-8' : '' }}">
+                                    <a href="#contact" x-on:click="open = false">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </nav>
     </header>
-
     <!-- Hero Section -->
     <section id="hero" class="relative min-h-screen flex flex-col justify-center items-center text-white text-center px-4 pt-32">
         <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('./images/bgimage.jpg');"></div>
